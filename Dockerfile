@@ -6,13 +6,14 @@ FROM node:alpine
 
 WORKDIR /usr/app
 
+# This copy the package.json file to make sure it cache when the index file changes in made
+
+COPY package.json ./
+
 # install the dependencies required
 
 RUN npm install
 
-# This copy the package.json file to make sure it cache when the index file changes in made
-
-COPY package.json ./
 
 # copy other files dependecies    
 

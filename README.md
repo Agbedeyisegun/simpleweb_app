@@ -22,15 +22,15 @@ cd <repository-directory>
 
 3. Build the Docker image:
 
-docker build -t node-express-app .
+docker build -t simpleweb or any name of your choice .
 
 
-4. Run the Docker container:
+4. Run the Docker container or any port of your choice if you dont want to use 3000 for the host port:
 
-docker run -p 8080:8080 node-express-app
+docker container run -p 3000:8080 simpleweb
 
 
-5. Access the application in your web browser at `http://localhost:8080`.
+5. Access the application in your web browser at `http://localhost:3000`.
 
 ## Project Structure
 
